@@ -15,7 +15,8 @@ class _LoginPageState extends State<LoginPage> {
 
   // final _controller = LoginController();
 
-  // bool _isLoading = false;
+  bool _isLoading = false;
+  final _controller = LoginController();
 
   @override
   void initState() {
@@ -69,11 +70,15 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 30),
               Center(
-                  child: ElevatedButton(
-                      onPressed: () {
-                        return _doLogin();
-                      },
-                      child: Text('SE CONNECTER')))
+                child: ElevatedButton(
+                  onPressed: () {
+                    return _doLogin();
+                  },
+                  child: _isLoading
+                      ? CircularProgressIndicator()
+                      : Text('SE CONNECTER'),
+                ),
+              )
             ],
           ),
         ));
@@ -83,8 +88,28 @@ class _LoginPageState extends State<LoginPage> {
     String email = _emailController.text;
     String password = _passwordController.text;
 
-    // setState(() {
-    //   _isLoading = true;
-    // });
+    setState(() {
+      _isLoading = true;
+    });
+
+    final error = await _controller.Register(email, password);
+
+    if (error == null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomePage()),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+
+    setState(() {
+      _isLoading = false;
+    });
   }
 }
