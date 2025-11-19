@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "56253229553",
+    "project_id": "projet-blue-beam-l4",
+    "storage_bucket": "projet-blue-beam-l4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56253229553:android:b0913c6ee0782c88dbfc50",
+        "android_client_info": {
+          "package_name": "com.example.l4_seance_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxYEV4DypH76VO_QGTbkZRHcYrUUQcjCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
