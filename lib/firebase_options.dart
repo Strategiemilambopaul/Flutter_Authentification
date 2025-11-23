@@ -41,48 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCInQpA5rYjRYFjI784FD4roaBj87nGngo',
-    appId: '1:56253229553:web:f7ec731082dd9fcddbfc50',
-    messagingSenderId: '56253229553',
-    projectId: 'projet-blue-beam-l4',
-    authDomain: 'projet-blue-beam-l4.firebaseapp.com',
-    storageBucket: 'projet-blue-beam-l4.firebasestorage.app',
-    measurementId: 'G-60YXSH6XBY',
+    apiKey: 'AIzaSyAc85xqEdo8BcqXPo8C4IU1heOn8Gb7yiM',
+    appId: '1:250833211356:web:2f641488dfb437e4ce8919',
+    messagingSenderId: '250833211356',
+    projectId: 'authentification-e00c7',
+    authDomain: 'authentification-e00c7.firebaseapp.com',
+    storageBucket: 'authentification-e00c7.firebasestorage.app',
+    measurementId: 'G-658EXXSHJ1',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBxYEV4DypH76VO_QGTbkZRHcYrUUQcjCM',
-    appId: '1:56253229553:android:b0913c6ee0782c88dbfc50',
-    messagingSenderId: '56253229553',
-    projectId: 'projet-blue-beam-l4',
-    storageBucket: 'projet-blue-beam-l4.firebasestorage.app',
+    apiKey: 'AIzaSyAu20Snxf81Cg-oxGxZToXydxeMaYTL3xk',
+    appId: '1:250833211356:android:ee8530923b580547ce8919',
+    messagingSenderId: '250833211356',
+    projectId: 'authentification-e00c7',
+    storageBucket: 'authentification-e00c7.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDxlKLS63sOBnFEv6yU2tmIrF58XRqSZGA',
-    appId: '1:56253229553:ios:044295b252f1ec53dbfc50',
-    messagingSenderId: '56253229553',
-    projectId: 'projet-blue-beam-l4',
-    storageBucket: 'projet-blue-beam-l4.firebasestorage.app',
+    apiKey: 'AIzaSyDthBNHAvxQ0ySRt4e-4JSaV6zA0fs8nrk',
+    appId: '1:250833211356:ios:6e025e0d8afddfccce8919',
+    messagingSenderId: '250833211356',
+    projectId: 'authentification-e00c7',
+    storageBucket: 'authentification-e00c7.firebasestorage.app',
+    iosClientId: '250833211356-kloh5cv7unusp5lcud1fg43bjecsv4vs.apps.googleusercontent.com',
     iosBundleId: 'com.example.l4Seance2',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDxlKLS63sOBnFEv6yU2tmIrF58XRqSZGA',
-    appId: '1:56253229553:ios:044295b252f1ec53dbfc50',
-    messagingSenderId: '56253229553',
-    projectId: 'projet-blue-beam-l4',
-    storageBucket: 'projet-blue-beam-l4.firebasestorage.app',
+    apiKey: 'AIzaSyDthBNHAvxQ0ySRt4e-4JSaV6zA0fs8nrk',
+    appId: '1:250833211356:ios:6e025e0d8afddfccce8919',
+    messagingSenderId: '250833211356',
+    projectId: 'authentification-e00c7',
+    storageBucket: 'authentification-e00c7.firebasestorage.app',
+    iosClientId: '250833211356-kloh5cv7unusp5lcud1fg43bjecsv4vs.apps.googleusercontent.com',
     iosBundleId: 'com.example.l4Seance2',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCInQpA5rYjRYFjI784FD4roaBj87nGngo',
-    appId: '1:56253229553:web:df97b8af9ac8e2addbfc50',
-    messagingSenderId: '56253229553',
-    projectId: 'projet-blue-beam-l4',
-    authDomain: 'projet-blue-beam-l4.firebaseapp.com',
-    storageBucket: 'projet-blue-beam-l4.firebasestorage.app',
-    measurementId: 'G-5JVNHF4JE9',
+    apiKey: 'AIzaSyAc85xqEdo8BcqXPo8C4IU1heOn8Gb7yiM',
+    appId: '1:250833211356:web:309f292513a5787bce8919',
+    messagingSenderId: '250833211356',
+    projectId: 'authentification-e00c7',
+    authDomain: 'authentification-e00c7.firebaseapp.com',
+    storageBucket: 'authentification-e00c7.firebasestorage.app',
+    measurementId: 'G-8PM2E0D0C2',
   );
+
 }
