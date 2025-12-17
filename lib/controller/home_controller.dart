@@ -12,14 +12,14 @@ class HomeController {
     });
   }
 
-  Future<void> addProduct(String name, String priceStr) async {
-    if (name.isEmpty || priceStr.isEmpty) return;
+  // Future<void> addProduct(String name, String priceStr) async {
+  //   if (name.isEmpty || priceStr.isEmpty) return;
 
-    int price = int.tryParse(priceStr.replaceAll(',', '.')) ?? 0;
+  //   int price = int.tryParse(priceStr.replaceAll(',', '.')) ?? 0;
 
-    await _db.collection('Produits').add({
-      'name': name,
-      'price': price,
-    });
-  }
+  //   await _db.collection('Produits').add({
+  //     'nom_produit': name,
+  //     'prix_produit': price,
+  //   });
+  // }
 }
