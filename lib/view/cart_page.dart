@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:l4_seance_2/cart_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -26,21 +27,23 @@ class CartPage extends StatelessWidget {
                 )
               : Column(
                   children: [
-                    ListView.builder(
-                        itemCount: value.items.length,
-                        itemBuilder: (context, index) {
-                          final product = value.items[index];
-                          return ListTile(
-                            leading: Icon(Icons.check),
-                            title: Text(product.nom_produit ?? '-'),
-                            subtitle:
-                                Text('${product.prix_produit.toString()} \$ '),
-                            trailing: IconButton(
-                              icon: Icon(Icons.remove),
-                              onPressed: () => value.remove(product),
-                            ),
-                          );
-                        }),
+                    Expanded(
+                      child: ListView.builder(
+                          itemCount: value.items.length,
+                          itemBuilder: (context, index) {
+                            final product = value.items[index];
+                            return ListTile(
+                              leading: Icon(Icons.check),
+                              title: Text(product.nom_produit ?? '-'),
+                              subtitle: Text(
+                                  '${product.prix_produit.toString()} \$ '),
+                              trailing: IconButton(
+                                icon: Icon(Icons.remove),
+                                onPressed: () => value.remove(product),
+                              ),
+                            );
+                          }),
+                    ),
                     Row(
                       children: [
                         Text(
@@ -56,7 +59,8 @@ class CartPage extends StatelessWidget {
                           ),
                         ),
                       ],
-                    )
+                    ),
+                    const Gap(25)
                   ],
                 ),
         );
