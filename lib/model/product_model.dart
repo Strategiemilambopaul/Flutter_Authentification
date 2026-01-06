@@ -6,12 +6,14 @@ class ProductModel {
       {required this.id,
       required this.nom_produit,
       required this.description_produit,
-      required this.prix_produit});
+      required this.prix_produit,
+      required this.image_produit});
 
   final String? id;
   final String? nom_produit;
   final String? description_produit;
-  final int? prix_produit;
+  final double? prix_produit;
+  final String? image_produit;
 
   factory ProductModel.fromFirestore(Map<String, dynamic> data, String id) {
     return ProductModel(
@@ -19,6 +21,7 @@ class ProductModel {
       nom_produit: data['nom_produit'],
       description_produit: data['description_produit'],
       prix_produit: data['prix_produit'],
+      image_produit: data['image_produit'],
     );
   }
 }
