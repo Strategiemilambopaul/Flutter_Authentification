@@ -155,7 +155,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
 
 
-    final error = await _controller.Login(email, password);
+    final error = await _controller.login(email, password);
 
     if (error == null) {
       Navigator.pushReplacement(

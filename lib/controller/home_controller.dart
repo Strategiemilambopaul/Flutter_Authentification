@@ -7,7 +7,7 @@ class HomeController {
   final ApiService _apiService = ApiService();
 
   Stream<List<ProductModel>> getProducts() {
-    return _db.collection('Produits').snapshots().map((snapshot) {
+    return _db.collection('Produits').limit(50).snapshots().map((snapshot) {
       return snapshot.docs.map((doc) {
         return ProductModel.fromFirestore(doc.data(), doc.id);
       }).toList();

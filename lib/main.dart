@@ -6,7 +6,6 @@ import 'package:l4_seance_2/view/home_page.dart';
 import 'package:l4_seance_2/view/login_page%20copy.dart';
 import 'package:provider/provider.dart';
 import 'cart_provider.dart';
-import 'view/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

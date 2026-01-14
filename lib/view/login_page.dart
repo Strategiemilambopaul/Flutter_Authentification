@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true;
     });
 
-    final error = await _controller.Register(email, password);
+    final error = await _controller.register(email, password);
 
     bool success = await context.read<AuthProviderr>().login(email, password);
 
